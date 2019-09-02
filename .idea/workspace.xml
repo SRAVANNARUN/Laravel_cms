@@ -16,26 +16,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/posts/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+            <state relative-caret-position="315">
+              <caret line="53" column="55" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PostsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="75" column="75" selection-start-line="75" selection-start-column="75" selection-end-line="75" selection-end-column="75" />
               <folding>
-                <element signature="e#1909#1928#0#HTML" expanded="true" />
+                <element signature="e#40#57#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PostsController.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_29_085932_create_posts_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="98" column="44" lean-forward="true" selection-start-line="98" selection-start-column="44" selection-end-line="98" selection-end-column="44" />
-              <folding>
-                <element signature="e#40#86#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -43,8 +49,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/posts/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="27" column="126" selection-start-line="27" selection-start-column="88" selection-end-line="27" selection-end-column="126" />
+            <state relative-caret-position="462">
+              <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/categories/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="26" column="148" selection-start-line="26" selection-start-column="148" selection-end-line="26" selection-end-column="148" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -52,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+            <state relative-caret-position="462">
+              <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
               <folding>
                 <element signature="e#23#62#0#PHP" expanded="true" />
               </folding>
@@ -62,10 +95,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_01_022626_add_soft_delete_to_posts_table.php">
+        <entry file="file://$PROJECT_DIR$/app/Category.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+            <state relative-caret-position="294">
+              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -73,15 +106,6 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="24" />
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -100,28 +124,28 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2019_08_29_085932_create_posts_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_08_29_085956_create_categories_table.php" />
-        <option value="$PROJECT_DIR$/app/Category.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/CreateCategoryRequest.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/Categories/UpdateCategoryRequest.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/Categories/CreateCategoryRequest.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php" />
         <option value="$PROJECT_DIR$/resources/views/categories/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/Posts/CreatePostRequest.php" />
         <option value="$PROJECT_DIR$/config/filesystems.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/Post.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_09_01_022626_add_soft_delete_to_posts_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/categories/index.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/posts/index.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Post.php" />
+        <option value="$PROJECT_DIR$/app/Category.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/Posts/UpdatePostRequest.php" />
-        <option value="$PROJECT_DIR$/resources/views/posts/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/Posts/CreatePostRequest.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_08_29_085932_create_posts_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" />
+        <option value="$PROJECT_DIR$/resources/views/posts/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/categories/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/posts/create.blade.php" />
       </list>
     </option>
   </component>
@@ -211,10 +235,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="412" />
-    <option name="y" value="189" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -222,7 +246,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -353,18 +376,11 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="todos-app - Copy - Copy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="todos-app - Copy - Copy" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="posts" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -416,17 +432,29 @@
       <workItem from="1567255790769" duration="9046000" />
       <workItem from="1567301597396" duration="8801000" />
       <workItem from="1567323640190" duration="4666000" />
-      <workItem from="1567342529586" duration="2788000" />
+      <workItem from="1567342529586" duration="3320000" />
+      <workItem from="1567395323864" duration="189000" />
+      <workItem from="1567395709350" duration="13612000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54804000" />
+    <option name="totallyTimeSpent" value="69137000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22859327" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23776758" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -435,11 +463,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32991454" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.43418804" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32991454" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.46324787" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -449,6 +477,32 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_29_085956_create_categories_table.php">
@@ -503,13 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/posts/QIOPw2FGcsZlKPPZiRV2S6L0JzNLnZl3uBXxyZcY.jpeg" />
     <entry file="file://$PROJECT_DIR$/storage/app/posts/Cw5f5pP5Bp5iIwA8QfpiGXjutRK92dw2k96Xbn7t.jpeg" />
     <entry file="file://$PROJECT_DIR$/resources/views/categories/create.blade.php">
@@ -521,13 +568,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/public/posts/YAWSEkbagggMjE6MVOcOvchqgiO1hP2yvB0Cyz3t.jpeg" />
     <entry file="file://$PROJECT_DIR$/storage/app/public/posts/QhXD3tqK10i2RUR81UJZiTChePGArIhdJnrFFO6G.jpeg" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_29_085932_create_posts_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/storage/posts/RiKzNgGQuMMvIvsLFxK2IA01QFvzdOPs1RsgLq5j.jpeg" />
     <entry file="file://$PROJECT_DIR$/public/storage/posts/r7Y0om66xZ2b2aIDNzaup9wSSm12UNxZ4AkSgicq.jpeg" />
     <entry file="file://$PROJECT_DIR$/public/storage/posts/qdi5Zb7VVltvfA7BKltWe9UCuONsiMhhp8k2vDSg.jpeg" />
@@ -548,27 +588,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/CreateCategoryRequest.php" />
+    <entry file="file://$PROJECT_DIR$/storage/app/public/posts/Co5AL8N3tcGiWitsmsIEjJk57Sl7jIBgoHZJUzIa.jpeg" />
+    <entry file="file://$PROJECT_DIR$/storage/app/public/posts/Y6LijVPeF8Mk8TwRtA6kMczsWgrvL8cf61yGY9nh.jpeg" />
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="25" column="82" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding>
-            <element signature="e#23#62#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="441">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -579,74 +612,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+          <folding>
+            <element signature="e#23#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/categories/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/CreateCategoryRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-104">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Posts/UpdatePostRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        <state relative-caret-position="378">
+          <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/Posts/CreatePostRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="29" column="37" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="29" selection-end-column="37" />
+        <state relative-caret-position="379">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Posts/UpdatePostRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_29_085932_create_posts_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PostsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="75" column="75" selection-start-line="75" selection-start-column="75" selection-end-line="75" selection-end-column="75" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/posts/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="27" column="126" selection-start-line="27" selection-start-column="88" selection-end-line="27" selection-end-column="126" />
+        <state relative-caret-position="462">
+          <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/categories/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="26" column="148" selection-start-line="26" selection-start-column="148" selection-end-line="26" selection-end-column="148" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/posts/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding>
-            <element signature="e#1909#1928#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/public/posts/Co5AL8N3tcGiWitsmsIEjJk57Sl7jIBgoHZJUzIa.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/public/posts/Y6LijVPeF8Mk8TwRtA6kMczsWgrvL8cf61yGY9nh.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PostsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="98" column="44" lean-forward="true" selection-start-line="98" selection-start-column="44" selection-end-line="98" selection-end-column="44" />
-          <folding>
-            <element signature="e#40#86#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="315">
+          <caret line="53" column="55" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
         </state>
       </provider>
     </entry>

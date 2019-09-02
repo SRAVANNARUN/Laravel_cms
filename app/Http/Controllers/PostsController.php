@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use App\Http\Requests\Posts\CreatePostRequest;
 use App\Http\Requests\Posts\UpdatePostRequest;
 use App\Post;
@@ -28,7 +29,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        return view('posts.create');
+        return view('posts.create')->with('categories',Category::all());
     }
 
     /**
@@ -45,7 +46,8 @@ class PostsController extends Controller
             'description'=>$request->description,
             'published_at'=>$request->published_at,
             'content'=>$request-> content,
-            'image'=>$image
+            'image'=>$image,
+            'category_id'=>$request->category
         ]);
         session()->flash('success','Post added successfully.');
 
@@ -71,7 +73,7 @@ class PostsController extends Controller
      */
     public function edit(Post $post)
     {
-        return view('posts.create')->with('post',$post);
+        return view('posts.create')->with('post',$post)->with('categories',Category::all());
     }
 
     /**
@@ -110,13 +112,15 @@ class PostsController extends Controller
         $post=Post::withTrashed()->where('id',$id)->firstOrFail();
 
         if ($post->trashed()){
-            Storage::delete($post->image);
+            $post->deleteImage();
             $post->forceDelete();
+            session()->flash('success', 'Posts deleted successfully.');
         }else{
             $post->delete();
+            session()->flash('success', 'Posts moved trash successfully.');
         }
 
-        session()->flash('success', 'Posts deleted successfully.');
+
 
         return redirect(route('posts.index'));
     }
@@ -126,5 +130,11 @@ class PostsController extends Controller
     public function trashed(){
         $trashed=Post::onlyTrashed()->get();
         return view('posts.index')->withPosts($trashed);
+    }
+
+    public function restore($id){
+        Post::withTrashed()->find($id)->restore();
+        session()->flash('success', 'Post restore successfully');
+        return redirect()->back();
     }
 }

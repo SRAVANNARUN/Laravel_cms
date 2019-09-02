@@ -9,7 +9,7 @@
 
     <div class="card">
         <div class="card-header">
-            Posts
+           Post
         </div>
         <div class="card-body">
             @if($posts->count()>0)
@@ -18,6 +18,7 @@
                     <tr>
                         <th>Image</th>
                         <th>Tile</th>
+                        <th></th>
                         <th></th>
                         <th></th>
                     </tr>
@@ -30,6 +31,12 @@
                             <td>
                                 @if(!$post->trashed())
                                     <a href="{{route('posts.edit', $post->id)}}" class="btn btn-info btn-xs ">Edit</a>
+                                    @else
+                                    <form action="{{route('posts.restore', $post->id)}}" method="POST">
+                                        @csrf
+                                        @method('PUT')
+                                        <button type="submit" class="btn btn-info">Restore</button>
+                                    </form>
                                 @endif
                             </td>
                             <td>
@@ -41,6 +48,7 @@
                                     </button>
                                 </form>
                             </td>
+
                         </tr>
                     @endforeach
                     </tbody>

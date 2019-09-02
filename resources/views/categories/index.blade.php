@@ -13,11 +13,18 @@
         <div class="card-body">
            @if($categories->count()>0)
                 <table class="table">
+                    <thead>
+                        <th>Name</th>
+                        <th>Posts Count</th>
+                        <th></th>
+                        <th></th>
+                    </thead>
                     <tbody>
                     @foreach($categories as $category)
                         <tr>
                             <td>{{$category->name}}</td>
-                            <td><a style="color: white" href="{{route('categories.edit', $category->id)}}" class="btn btn-warning btn-sm ">Edit</a></td>
+                            <td>{{$category->posts->count()}}</td>
+                            <td><a style="color: white" href="{{route('categories.edit', $category->id)}}" class="btn btn-warning btn-sm float-right">Edit</a></td>
                             <td><button class="btn btn-danger btn-sm" onclick="handleDelete({{$category->id}})">Delete</button></td>
                         </tr>
                     @endforeach
