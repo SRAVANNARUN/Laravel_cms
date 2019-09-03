@@ -11,6 +11,11 @@ use Illuminate\Support\Facades\Storage;
 
 class PostsController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('verifyCategoriesCount')->only(['create','store']);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -85,17 +90,14 @@ class PostsController extends Controller
      */
     public function update(UpdatePostRequest $request, Post $post)
     {
-        $data =$request->only([
-           'title',
-           'description',
-           'content',
-            'published_at'
-        ]);
+        $data =$request->all();
+//        return $data;
         if ($request->hasFile('image')){
             $image=$request->image->store('posts');
             Storage::delete($post->image);
             $data['image']=$image;
         }
+        $post['category_id']=$data['category'];
         $post->update($data);
         session()->flash('success', 'Post updated successfully.');
         return redirect(route('posts.index'));

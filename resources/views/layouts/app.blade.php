@@ -84,6 +84,11 @@
                             {{session()->get('success')}}
                         </div>
                     @endif
+                        @if(session()->has('error'))
+                            <div class="alert alert-danger">
+                                {{session()->get('error')}}
+                            </div>
+                        @endif
                     <div class="row">
                         <div class="col-md-4">
                             <ul class="list-group mt-2">
@@ -96,9 +101,15 @@
                             </ul>
                             <ul class="list-group mt-2">
                                 <li class="list-group-item">
+                                    <a href="{{route('tags.index')}}">Tags</a>
+                                </li>
+                            </ul>
+                            <ul class="list-group mt-2">
+                                <li class="list-group-item">
                                     <a href="{{route('trashed-posts.index')}}">Trashed Posts</a>
                                 </li>
                             </ul>
+
                         </div>
                         <div class="col-md-8">
                             @yield('content')

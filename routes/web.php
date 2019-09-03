@@ -17,12 +17,19 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//only authenticated user can access this routes
+Route::middleware(['auth'])->group(function (){
 
-Route::resource('categories', 'CategoriesController');
+    Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('posts','PostsController');
+    Route::resource('categories', 'CategoriesController');
 
-Route::get('trashed-posts', 'PostsController@trashed')->name('trashed-posts.index');
+    Route::resource('posts','PostsController');
 
-Route::put('restore/{id}', 'PostsController@restore')->name('posts.restore');
+    Route::get('trashed-posts', 'PostsController@trashed')->name('trashed-posts.index');
+
+    Route::put('restore/{id}', 'PostsController@restore')->name('posts.restore');
+
+    Route::resource('tags','TagsController');
+
+});
