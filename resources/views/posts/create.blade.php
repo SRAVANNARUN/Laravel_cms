@@ -33,6 +33,7 @@
                     <textarea class="form-control" id="description" rows="3" name="description">{{isset($post) ? $post->description : ''}}</textarea>
                 </div>
                 <div class="form-group ">
+                    <label for="content">Content</label>
                     <input id="content" type="hidden" name="content" value="{{isset($post) ? $post->content : ''}}">
                     <trix-editor input="content"></trix-editor>
 
@@ -64,6 +65,27 @@
                     <label for="image">Image</label>
                     <input type="file" class="form-control-file" id="image" name="image">
                 </div>
+
+
+                    @if($tags->count()>0)
+                        <div class="form-group">
+                            <label for="tags">Tags</label>
+                            <select name="tags[]" id="tags" class="form-control tags-selector" multiple>
+                                @foreach($tags as $tag)
+                                    <option value="{{$tag->id}}"
+                                            @if(isset($post))
+                                                @if($post->hasTag($tag->id))
+                                                    selected
+                                                 @endif
+                                            @endif
+                                    >
+                                        {{$tag->name}}
+                                    </option>
+                                @endforeach
+                            </select>
+                        </div>
+                    @endif
+
                 <div class="form-group">
                     <button type="submit" class="btn btn-success">{{isset($post) ? 'Update Post' : 'Create Post'}}</button>
                 </div>
@@ -76,15 +98,20 @@
 @section('css')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/trix/1.2.0/trix.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet" />
 @endsection
 
 @section('scripts')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/trix/1.2.0/trix.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
     <script>
         flatpickr('#published_at', {
             enableTime:true
         })
+        $(document).ready(function() {
+            $('.tags-selector').select2();
+        });
     </script>
 @endsection
 

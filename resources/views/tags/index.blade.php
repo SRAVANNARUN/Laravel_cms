@@ -23,7 +23,7 @@
                     @foreach($tags as $tag)
                         <tr>
                             <td>{{$tag->name}}</td>
-                            <td>0</td>
+                            <td>{{$tag->posts->count()}}</td>
                             <td><a style="color: white" href="{{route('tags.edit', $tag->id)}}" class="btn btn-warning btn-sm float-right">Edit</a></td>
                             <td><button class="btn btn-danger btn-sm" onclick="handleDelete({{$tag->id}})">Delete</button></td>
                         </tr>
