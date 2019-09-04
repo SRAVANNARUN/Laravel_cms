@@ -30,7 +30,12 @@
                                 {{$user->email}}
                             </td>
                             @if(!$user->isAdmin())
-                                <td><button class="btn btn-primary btn-sm">Make Admin</button></td>
+                                <td>
+                                    <form action="{{route('users.make-admin', $user->id)}} " method="POST">
+                                        @csrf
+                                        <button type="submit" class="btn btn-primary btn-sm">Make Admin</button>
+                                    </form>
+                                </td>
                             @endif
                         </tr>
                     @endforeach

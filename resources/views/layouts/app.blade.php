@@ -58,7 +58,11 @@
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
+
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('users.edit-profile') }}" >
+                                        Profile
+                                    </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -79,16 +83,8 @@
         <main class="py-4">
             @auth()
                 <div class="container">
-                    @if(session()->has('success'))
-                        <div class="alert alert-info">
-                            {{session()->get('success')}}
-                        </div>
-                    @endif
-                        @if(session()->has('error'))
-                            <div class="alert alert-danger">
-                                {{session()->get('error')}}
-                            </div>
-                        @endif
+                    @include('partials.error')
+                    @include('partials.success')
                     <div class="row">
                         <div class="col-md-4">
                             @if(auth()->user()->isAdmin())
