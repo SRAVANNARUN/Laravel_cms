@@ -9,7 +9,7 @@
 
     <div class="card">
         <div class="card-header">
-           Post
+           Posts
         </div>
         <div class="card-body">
             @if($posts->count()>0)
